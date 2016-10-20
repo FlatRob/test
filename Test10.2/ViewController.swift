@@ -37,6 +37,7 @@ class ViewController: UIViewController, myProtocol {
         super.viewDidAppear(animated)
         
         print("ciao")
+        print("ciao")
         
         
        myLabel.backgroundColor = UIColor(patternImage: UIImage(named:"bemolle.jpg")!).withAlphaComponent(0.9)
