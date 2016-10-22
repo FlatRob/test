@@ -15,7 +15,9 @@ class ViewController: UIViewController, myProtocol {
     @IBOutlet var myNavigationBar: UINavigationItem!
     @IBOutlet var myLabel: UILabel!
     
-    @IBOutlet var myScrollGraph: BarGraph!
+    
+    @IBOutlet var myScroll: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,31 +25,91 @@ class ViewController: UIViewController, myProtocol {
         
       print("foobar")
         
-        myScrollGraph.numberOfItems = 200
-        myScrollGraph.barColor = UIColor.orange
-        myScrollGraph.minimumSpacing = 3
-
+        
         
         
         
         
     }
     
+    
+    
+    
+    @IBOutlet var myBut: UIButton!
+    
+    @IBOutlet var myImageView: UIImageView!
+    
+    
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        print("ciao")
-        print("ciao")
+        var xCoord = myScroll.bounds.minX
+        var yCoord = myScroll.bounds.midY
+        let buttonWidth  = 30.0 as CGFloat
+        let buttonHeight  = 100.0 as CGFloat
+        let buffer = 3 as CGFloat
+        
+        for i in 0...40 {
+            
+            var aButton = UIButton(type: .custom)
+           // aButton.setImage(UIImage(named: "Hello"), for: .normal)
+            aButton.frame = CGRect(x: xCoord  , y: yCoord, width: buttonWidth, height: buttonHeight)
+         //   aButton.frame = CGRect(x: xCoord, y: yCoord, width: buttonWidth, height: buttonHeight)
+            aButton.tintColor = UIColor.red
+            aButton.backgroundColor = UIColor.blue
+            aButton.tag = i
+            aButton.setTitle("\(i)", for: .normal)
+            aButton.addTarget(self, action: #selector(scrollButAction(sender:)), for: .touchUpInside)
+            var aLabel = UILabel(frame: CGRect(x: xCoord,y: 40, width: buttonWidth, height: 24))
+            aLabel.text = "\(i)"
+            aLabel.textColor = UIColor.red
+            aLabel.adjustsFontSizeToFitWidth = true
+            aLabel.font = UIFont.init(name: "HelveticaNeue-Light", size: 14)
+            myScroll.addSubview(aButton)
+            myScroll.addSubview(aLabel)
+            
+            xCoord += buttonWidth + buffer
+            
+        }
+        
+        myScroll.scrollRectToVisible(CGRect(x: xCoord  , y: yCoord, width: buttonWidth - 10, height: buttonHeight - 20), animated: true)
+        
+        myScroll.contentSize = CGSize(width: xCoord, height: myScroll.bounds.height)
         
         
-       myLabel.backgroundColor = UIColor(patternImage: UIImage(named:"bemolle.jpg")!).withAlphaComponent(0.9)
-        
-        let myView = UIView()
-        myView.frame = view.bounds
-        myView.backgroundColor = UIColor(patternImage: UIImage(named: "sRUK1.png")!)
-
-        view.insertSubview(myView, at: 0)
-        
+    }
+    
+    func scrollButAction(sender: UIButton) {
+        switch sender.tag {
+            
+        case 0:
+            
+            print("Hello #0")
+            
+        case 1:
+            
+            print("Hello #1")
+            
+        case 2:
+            
+            print("Hello #2")
+            
+        case 3:
+            
+            print("Hello #3")
+            
+        case 4:
+            
+            
+            print("Hello #4")
+            
+        default:
+            
+            print("default")
+            
+        }
     }
     
     
@@ -78,5 +140,8 @@ class ViewController: UIViewController, myProtocol {
             Vc2?.user = (firstName : "Roberto", lastName : "Marco",controlView : false)
     }
         
-        }
+       
+    }
+    
+   
 }

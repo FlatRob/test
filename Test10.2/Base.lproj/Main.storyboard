@@ -28,13 +28,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hl6-PJ-fMd" customClass="BarGraph" customModule="Test10_2" customModuleProvider="target">
-                                <rect key="frame" x="67" y="72" width="240" height="233"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="dBx-NZ-BAr"/>
-                                    <constraint firstAttribute="height" constant="233" id="vJk-hv-hUx"/>
-                                </constraints>
-                            </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRi-eN-hwB">
                                 <rect key="frame" x="66" y="362" width="241" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -42,14 +35,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bWg-qJ-SfS">
+                                <rect key="frame" x="134" y="410" width="106" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEA-K1-HhR">
+                                <rect key="frame" x="68" y="117" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="NTy-iz-sBh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8LF-gf-iSi"/>
-                            <constraint firstItem="hl6-PJ-fMd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="JG6-ov-Uo2"/>
                             <constraint firstItem="NTy-iz-sBh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V6j-ah-RQp"/>
                             <constraint firstItem="NTy-iz-sBh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="vZD-kb-eVZ"/>
-                            <constraint firstItem="hl6-PJ-fMd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yEb-Ws-qBX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WOm-8N-r4P">
@@ -62,9 +61,10 @@
                     </navigationItem>
                     <connections>
                         <outlet property="buttonBar" destination="KO1-BQ-SIC" id="AHM-iX-FU6"/>
+                        <outlet property="myImageView" destination="bWg-qJ-SfS" id="pMN-Zs-hHw"/>
                         <outlet property="myLabel" destination="bRi-eN-hwB" id="ncE-Yq-mXZ"/>
                         <outlet property="myNavigationBar" destination="WOm-8N-r4P" id="VLL-FE-geh"/>
-                        <outlet property="myScrollGraph" destination="hl6-PJ-fMd" id="A1o-1V-7gY"/>
+                        <outlet property="myScroll" destination="wEA-K1-HhR" id="RpE-wb-vvB"/>
                         <outlet property="myText" destination="NTy-iz-sBh" id="Uui-ho-zIR"/>
                         <segue destination="JCP-YT-O05" kind="show" identifier="Vc2" id="tKT-Wx-Ckt"/>
                     </connections>

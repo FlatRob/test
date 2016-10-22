@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        UNUserNotificationCenter.current().requestAuthorization(options:[.badge, .alert, .sound]){ (granted, error) in
+        
+            if granted {
+                
+                application.applicationIconBadgeNumber = 1
+                
+              //  application.applicationIconBadgeNumber = 1
+                
+                let content = UNMutableNotificationContent()
+                content.badge = 2
+                content.categoryIdentifier = "test"
+                content.sound = UNNotificationSound.default()
+                content.title = "ciao"
+                content.threadIdentifier = "ciao"
+                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1.0, repeats: false)
+                // let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 4.0, repeats: false)
+               let request = UNNotificationRequest(identifier: "test", content: content, trigger: trigger)
+               let center = UNUserNotificationCenter.current()
+                center.add(request, withCompletionHandler: nil)
+                
+                
+//                content.badge = 1
+//                content.categoryIdentifier = "com.psv.localNotification"
+               
+//                let request = UNNotificationRequest.init(identifier: "AmountTodayUpdate", content: content, trigger: trigger)
+//                
+//                let center = UNUserNotificationCenter.current()
+//                center.add(request, withCompletionHandler: { (error) in
+//                    if (error != nil) {
+//                        print (error!)
+//                    }
+//                })
+            }
+        }
+        
+        
+        
+        application.registerForRemoteNotifications()
+        
+        
+        
         return true
     }
 

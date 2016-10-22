@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ViewController2: UIViewController {
+class ViewController2: UIViewController, UICollectionViewDataSource {
     
+    @IBOutlet var myCollection: UICollectionView!
     var myDelegate : myProtocol?
     
     @IBOutlet var chatPartnerLabel: UILabel!
@@ -28,7 +29,32 @@ class ViewController2: UIViewController {
        
     }
     
+    var controlColorMark : Bool = false {
+        
+        willSet{
+            if newValue  {
+                
+                MarckBook.tintColor = UIColor.red
+                
+                
+            }else {
+                
+                MarckBook.tintColor = UIColor.lightGray
+            }
+        }
+    }
     
+    @IBOutlet var MarckBook: UIBarButtonItem!
+    
+    @IBAction func bookMark(_ sender: UIBarButtonItem) {
+        
+        if controlColorMark {
+        controlColorMark = false
+        }else{
+            controlColorMark = true
+ 
+        }
+    }
     
     
 
@@ -37,6 +63,7 @@ class ViewController2: UIViewController {
         
                
        user?.controlView = true
+        
 
         // Do any additional setup after loading the view.
         
@@ -59,6 +86,27 @@ class ViewController2: UIViewController {
 
     }
     
+    
+     //MARK: - collection View data source and delegate
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return 100
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
+//                                                      for: indexPath) as! FlickrPhotoCell
+        let cell = myCollection.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionCellCollectionViewCell
+        cell.backgroundColor = UIColor.black
+        cell.inserDatainCell(name: "Ciao")
+        
+        // Configure the cell
+        return cell
+    }
+    
+    
 
     /*
     // MARK: - Navigation
@@ -71,6 +119,8 @@ class ViewController2: UIViewController {
     */
 
 }
+
+
 
 
 protocol myProtocol {

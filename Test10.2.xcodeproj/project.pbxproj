@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EFB3872C1DB8BCB700F1CE1F /* sRUk1.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB3872B1DB8BCB700F1CE1F /* sRUk1.png */; };
+		EFB3872E1DB91B0300F1CE1F /* CollectionCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB3872D1DB91B0300F1CE1F /* CollectionCellCollectionViewCell.swift */; };
+		EFB387311DBB611300F1CE1F /* dog_footprint75.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB387301DBB611300F1CE1F /* dog_footprint75.png */; };
+		EFB387331DBB616500F1CE1F /* Ribbon75.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB387321DBB616500F1CE1F /* Ribbon75.png */; };
+		EFB387351DBBA40300F1CE1F /* imageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB387341DBBA40300F1CE1F /* imageView.swift */; };
 		EFCCD8DC1DB60E74003D97F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD8DB1DB60E74003D97F3 /* AppDelegate.swift */; };
 		EFCCD8DE1DB60E74003D97F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD8DD1DB60E74003D97F3 /* ViewController.swift */; };
 		EFCCD8E11DB60E74003D97F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCCD8DF1DB60E74003D97F3 /* Main.storyboard */; };
@@ -40,6 +44,11 @@
 
 /* Begin PBXFileReference section */
 		EFB3872B1DB8BCB700F1CE1F /* sRUk1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sRUk1.png; sourceTree = "<group>"; };
+		EFB3872D1DB91B0300F1CE1F /* CollectionCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		EFB3872F1DBA0E6C00F1CE1F /* Test10.2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Test10.2.entitlements; sourceTree = "<group>"; };
+		EFB387301DBB611300F1CE1F /* dog_footprint75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog_footprint75.png; sourceTree = "<group>"; };
+		EFB387321DBB616500F1CE1F /* Ribbon75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ribbon75.png; sourceTree = "<group>"; };
+		EFB387341DBBA40300F1CE1F /* imageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageView.swift; sourceTree = "<group>"; };
 		EFCCD8D81DB60E74003D97F3 /* Test10.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test10.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCCD8DB1DB60E74003D97F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFCCD8DD1DB60E74003D97F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,12 +116,17 @@
 		EFCCD8DA1DB60E74003D97F3 /* Test10.2 */ = {
 			isa = PBXGroup;
 			children = (
+				EFB3872F1DBA0E6C00F1CE1F /* Test10.2.entitlements */,
+				EFB387321DBB616500F1CE1F /* Ribbon75.png */,
+				EFB387301DBB611300F1CE1F /* dog_footprint75.png */,
 				EFB3872B1DB8BCB700F1CE1F /* sRUk1.png */,
 				EFCCD9161DB8A205003D97F3 /* bemolle.jpg */,
 				EFCCD8DB1DB60E74003D97F3 /* AppDelegate.swift */,
 				EFCCD8DD1DB60E74003D97F3 /* ViewController.swift */,
 				EFCCD9121DB7A47F003D97F3 /* ViewController2.swift */,
 				EFCCD9141DB7AA3E003D97F3 /* Scroll.swift */,
+				EFB3872D1DB91B0300F1CE1F /* CollectionCellCollectionViewCell.swift */,
+				EFB387341DBBA40300F1CE1F /* imageView.swift */,
 				EFCCD8DF1DB60E74003D97F3 /* Main.storyboard */,
 				EFCCD9091DB60FD2003D97F3 /* Vc2.storyboard */,
 				EFCCD8E21DB60E74003D97F3 /* Assets.xcassets */,
@@ -210,6 +224,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 5LFB9MVNWK;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					EFCCD8EB1DB60E74003D97F3 = {
 						CreatedOnToolsVersion = 8.1;
@@ -255,6 +274,8 @@
 				EFB3872C1DB8BCB700F1CE1F /* sRUk1.png in Resources */,
 				EFCCD8E31DB60E74003D97F3 /* Assets.xcassets in Resources */,
 				EFCCD8E11DB60E74003D97F3 /* Main.storyboard in Resources */,
+				EFB387311DBB611300F1CE1F /* dog_footprint75.png in Resources */,
+				EFB387331DBB616500F1CE1F /* Ribbon75.png in Resources */,
 				EFCCD9171DB8A205003D97F3 /* bemolle.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,8 +302,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFCCD8DE1DB60E74003D97F3 /* ViewController.swift in Sources */,
+				EFB3872E1DB91B0300F1CE1F /* CollectionCellCollectionViewCell.swift in Sources */,
 				EFCCD8DC1DB60E74003D97F3 /* AppDelegate.swift in Sources */,
 				EFCCD9151DB7AA3E003D97F3 /* Scroll.swift in Sources */,
+				EFB387351DBBA40300F1CE1F /* imageView.swift in Sources */,
 				EFCCD9131DB7A47F003D97F3 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Test10.2/Test10.2.entitlements;
 				DEVELOPMENT_TEAM = 5LFB9MVNWK;
 				INFOPLIST_FILE = Test10.2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -454,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Test10.2/Test10.2.entitlements;
 				DEVELOPMENT_TEAM = 5LFB9MVNWK;
 				INFOPLIST_FILE = Test10.2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
