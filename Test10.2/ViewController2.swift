@@ -49,10 +49,10 @@ class ViewController2: UIViewController, UICollectionViewDataSource {
     @IBAction func bookMark(_ sender: UIBarButtonItem) {
         
         if controlColorMark {
-        controlColorMark = false
+            controlColorMark = false
         }else{
             controlColorMark = true
- 
+            
         }
     }
     
@@ -61,8 +61,17 @@ class ViewController2: UIViewController, UICollectionViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-               
-       user?.controlView = true
+//        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: nil)
+//        backButton.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "AppleSDGothicNeo-Light", size: 20.0)!, NSForegroundColorAttributeName : UIColor.red], for: UIControlState())
+//        navigationItem.backBarButtonItem = backButton
+        
+        let appearance = UINavigationBar.appearance()
+        appearance.isTranslucent = false
+        appearance.barTintColor = UIColor(red: 80/255, green: 185/255, blue: 225/255, alpha: 1)
+        appearance.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Chalkduster", size: 21)!, NSForegroundColorAttributeName: UIColor.white]
+            
+            
+            user?.controlView = true
         
 
         // Do any additional setup after loading the view.

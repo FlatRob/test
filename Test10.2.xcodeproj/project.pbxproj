@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF28B6981DD4AE150025A245 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28B6971DD4AE150025A245 /* NavigationViewController.swift */; };
+		EF28B69A1DD8AED00025A245 /* DrawLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28B6991DD8AED00025A245 /* DrawLineViewController.swift */; };
+		EF28B69C1DDDA4150025A245 /* CircleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28B69B1DDDA4150025A245 /* CircleImageViewController.swift */; };
+		EF28B69E1DDE0A280025A245 /* COreLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28B69D1DDE0A280025A245 /* COreLocationViewController.swift */; };
+		EF28B6A01DE44E4A0025A245 /* gravityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28B69F1DE44E4A0025A245 /* gravityViewController.swift */; };
+		EF28B6A21DE494400025A245 /* ArrayStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28B6A11DE4943F0025A245 /* ArrayStruct.swift */; };
+		EF734AE41DC6122B00E3E541 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF734AE31DC6122B00E3E541 /* CameraViewController.swift */; };
+		EF83FB9E1DCF77A100AE6D2B /* PickerTextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF83FB9D1DCF77A100AE6D2B /* PickerTextController.swift */; };
+		EF8F60DE1DBDF25C00AC10BC /* textView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8F60DD1DBDF25C00AC10BC /* textView.swift */; };
 		EFB3872C1DB8BCB700F1CE1F /* sRUk1.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB3872B1DB8BCB700F1CE1F /* sRUk1.png */; };
 		EFB3872E1DB91B0300F1CE1F /* CollectionCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB3872D1DB91B0300F1CE1F /* CollectionCellCollectionViewCell.swift */; };
 		EFB387311DBB611300F1CE1F /* dog_footprint75.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB387301DBB611300F1CE1F /* dog_footprint75.png */; };
@@ -19,10 +28,10 @@
 		EFCCD8E61DB60E74003D97F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCCD8E41DB60E74003D97F3 /* LaunchScreen.storyboard */; };
 		EFCCD8F11DB60E74003D97F3 /* Test10_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD8F01DB60E74003D97F3 /* Test10_2Tests.swift */; };
 		EFCCD8FC1DB60E74003D97F3 /* Test10_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD8FB1DB60E74003D97F3 /* Test10_2UITests.swift */; };
-		EFCCD90B1DB60FD2003D97F3 /* Vc2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFCCD9091DB60FD2003D97F3 /* Vc2.storyboard */; };
 		EFCCD9131DB7A47F003D97F3 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD9121DB7A47F003D97F3 /* ViewController2.swift */; };
 		EFCCD9151DB7AA3E003D97F3 /* Scroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCD9141DB7AA3E003D97F3 /* Scroll.swift */; };
 		EFCCD9171DB8A205003D97F3 /* bemolle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFCCD9161DB8A205003D97F3 /* bemolle.jpg */; };
+		EFEDD69A1DD0CDAF00245B59 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEDD6991DD0CDAF00245B59 /* AlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +52,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF28B6971DD4AE150025A245 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		EF28B6991DD8AED00025A245 /* DrawLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawLineViewController.swift; sourceTree = "<group>"; };
+		EF28B69B1DDDA4150025A245 /* CircleImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageViewController.swift; sourceTree = "<group>"; };
+		EF28B69D1DDE0A280025A245 /* COreLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = COreLocationViewController.swift; sourceTree = "<group>"; };
+		EF28B69F1DE44E4A0025A245 /* gravityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gravityViewController.swift; sourceTree = "<group>"; };
+		EF28B6A11DE4943F0025A245 /* ArrayStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayStruct.swift; sourceTree = "<group>"; };
+		EF734AE31DC6122B00E3E541 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		EF83FB9D1DCF77A100AE6D2B /* PickerTextController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerTextController.swift; sourceTree = "<group>"; };
+		EF8F60DD1DBDF25C00AC10BC /* textView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = textView.swift; sourceTree = "<group>"; };
 		EFB3872B1DB8BCB700F1CE1F /* sRUk1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sRUk1.png; sourceTree = "<group>"; };
 		EFB3872D1DB91B0300F1CE1F /* CollectionCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		EFB3872F1DBA0E6C00F1CE1F /* Test10.2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Test10.2.entitlements; sourceTree = "<group>"; };
@@ -62,10 +80,10 @@
 		EFCCD8F71DB60E74003D97F3 /* Test10.2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test10.2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCCD8FB1DB60E74003D97F3 /* Test10_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test10_2UITests.swift; sourceTree = "<group>"; };
 		EFCCD8FD1DB60E74003D97F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFCCD90A1DB60FD2003D97F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Vc2.storyboard; sourceTree = "<group>"; };
 		EFCCD9121DB7A47F003D97F3 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		EFCCD9141DB7AA3E003D97F3 /* Scroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scroll.swift; sourceTree = "<group>"; };
 		EFCCD9161DB8A205003D97F3 /* bemolle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bemolle.jpg; sourceTree = "<group>"; };
+		EFEDD6991DD0CDAF00245B59 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,13 +140,22 @@
 				EFB3872B1DB8BCB700F1CE1F /* sRUk1.png */,
 				EFCCD9161DB8A205003D97F3 /* bemolle.jpg */,
 				EFCCD8DB1DB60E74003D97F3 /* AppDelegate.swift */,
+				EF8F60DD1DBDF25C00AC10BC /* textView.swift */,
 				EFCCD8DD1DB60E74003D97F3 /* ViewController.swift */,
+				EF734AE31DC6122B00E3E541 /* CameraViewController.swift */,
 				EFCCD9121DB7A47F003D97F3 /* ViewController2.swift */,
 				EFCCD9141DB7AA3E003D97F3 /* Scroll.swift */,
 				EFB3872D1DB91B0300F1CE1F /* CollectionCellCollectionViewCell.swift */,
+				EF83FB9D1DCF77A100AE6D2B /* PickerTextController.swift */,
 				EFB387341DBBA40300F1CE1F /* imageView.swift */,
+				EFEDD6991DD0CDAF00245B59 /* AlertController.swift */,
+				EF28B6991DD8AED00025A245 /* DrawLineViewController.swift */,
+				EF28B69B1DDDA4150025A245 /* CircleImageViewController.swift */,
+				EF28B69D1DDE0A280025A245 /* COreLocationViewController.swift */,
+				EF28B6971DD4AE150025A245 /* NavigationViewController.swift */,
+				EF28B69F1DE44E4A0025A245 /* gravityViewController.swift */,
+				EF28B6A11DE4943F0025A245 /* ArrayStruct.swift */,
 				EFCCD8DF1DB60E74003D97F3 /* Main.storyboard */,
-				EFCCD9091DB60FD2003D97F3 /* Vc2.storyboard */,
 				EFCCD8E21DB60E74003D97F3 /* Assets.xcassets */,
 				EFCCD8E41DB60E74003D97F3 /* LaunchScreen.storyboard */,
 				EFCCD8E71DB60E74003D97F3 /* Info.plist */,
@@ -217,7 +244,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "roberto lupi";
 				TargetAttributes = {
 					EFCCD8D71DB60E74003D97F3 = {
@@ -269,7 +296,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFCCD90B1DB60FD2003D97F3 /* Vc2.storyboard in Resources */,
 				EFCCD8E61DB60E74003D97F3 /* LaunchScreen.storyboard in Resources */,
 				EFB3872C1DB8BCB700F1CE1F /* sRUk1.png in Resources */,
 				EFCCD8E31DB60E74003D97F3 /* Assets.xcassets in Resources */,
@@ -301,11 +327,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF28B6A21DE494400025A245 /* ArrayStruct.swift in Sources */,
 				EFCCD8DE1DB60E74003D97F3 /* ViewController.swift in Sources */,
+				EF28B6981DD4AE150025A245 /* NavigationViewController.swift in Sources */,
 				EFB3872E1DB91B0300F1CE1F /* CollectionCellCollectionViewCell.swift in Sources */,
 				EFCCD8DC1DB60E74003D97F3 /* AppDelegate.swift in Sources */,
+				EF28B69A1DD8AED00025A245 /* DrawLineViewController.swift in Sources */,
+				EF28B6A01DE44E4A0025A245 /* gravityViewController.swift in Sources */,
 				EFCCD9151DB7AA3E003D97F3 /* Scroll.swift in Sources */,
+				EF8F60DE1DBDF25C00AC10BC /* textView.swift in Sources */,
+				EF734AE41DC6122B00E3E541 /* CameraViewController.swift in Sources */,
+				EF28B69E1DDE0A280025A245 /* COreLocationViewController.swift in Sources */,
+				EF28B69C1DDDA4150025A245 /* CircleImageViewController.swift in Sources */,
+				EFEDD69A1DD0CDAF00245B59 /* AlertController.swift in Sources */,
 				EFB387351DBBA40300F1CE1F /* imageView.swift in Sources */,
+				EF83FB9E1DCF77A100AE6D2B /* PickerTextController.swift in Sources */,
 				EFCCD9131DB7A47F003D97F3 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,14 +394,6 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		EFCCD9091DB60FD2003D97F3 /* Vc2.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EFCCD90A1DB60FD2003D97F3 /* Base */,
-			);
-			name = Vc2.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -387,6 +415,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -409,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -436,6 +465,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -452,7 +482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -467,6 +497,7 @@
 				CODE_SIGN_ENTITLEMENTS = Test10.2/Test10.2.entitlements;
 				DEVELOPMENT_TEAM = 5LFB9MVNWK;
 				INFOPLIST_FILE = Test10.2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "roberto.Test10-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,6 +512,7 @@
 				CODE_SIGN_ENTITLEMENTS = Test10.2/Test10.2.entitlements;
 				DEVELOPMENT_TEAM = 5LFB9MVNWK;
 				INFOPLIST_FILE = Test10.2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "roberto.Test10-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -495,6 +527,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 5LFB9MVNWK;
 				INFOPLIST_FILE = Test10.2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "roberto.Test10-2Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,6 +543,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 5LFB9MVNWK;
 				INFOPLIST_FILE = Test10.2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "roberto.Test10-2Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -524,6 +558,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5LFB9MVNWK;
 				INFOPLIST_FILE = Test10.2UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "roberto.Test10-2UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -538,6 +573,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 5LFB9MVNWK;
 				INFOPLIST_FILE = Test10.2UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "roberto.Test10-2UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

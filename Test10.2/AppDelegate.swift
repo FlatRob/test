@@ -8,6 +8,8 @@
 
 import UIKit
 import UserNotifications
+import CoreLocation
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,27 +20,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        UNUserNotificationCenter.current().requestAuthorization(options:[.badge, .alert, .sound]){ (granted, error) in
+        //core location
+        let locationM = CLLocationManager()
+        locationM.requestWhenInUseAuthorization()
+
+//        UNUserNotificationCenter.current().requestAuthorization(options:[.badge, .alert, .sound]){ (granted, error) in
+//        
+//            if granted {
+//                
+//                application.applicationIconBadgeNumber = 1
+//                
+//              //  application.applicationIconBadgeNumber = 1
+//                
+//                let content = UNMutableNotificationContent()
+//                content.badge = 2
+//                content.categoryIdentifier = "test"
+//                content.sound = UNNotificationSound.default()
+//                content.title = "ciao"
+//                content.threadIdentifier = "ciao"
+//                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1.0, repeats: false)
+//                // let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 4.0, repeats: false)
+//               let request = UNNotificationRequest(identifier: "test", content: content, trigger: trigger)
+//               let center = UNUserNotificationCenter.current()
+//                center.add(request, withCompletionHandler: nil)
+//                
         
-            if granted {
-                
-                application.applicationIconBadgeNumber = 1
-                
-              //  application.applicationIconBadgeNumber = 1
-                
-                let content = UNMutableNotificationContent()
-                content.badge = 2
-                content.categoryIdentifier = "test"
-                content.sound = UNNotificationSound.default()
-                content.title = "ciao"
-                content.threadIdentifier = "ciao"
-                let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1.0, repeats: false)
-                // let trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: 4.0, repeats: false)
-               let request = UNNotificationRequest(identifier: "test", content: content, trigger: trigger)
-               let center = UNUserNotificationCenter.current()
-                center.add(request, withCompletionHandler: nil)
-                
-                
 //                content.badge = 1
 //                content.categoryIdentifier = "com.psv.localNotification"
                
@@ -50,12 +56,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                        print (error!)
 //                    }
 //                })
-            }
-        }
+//            }
+//        }
         
         
         
-        application.registerForRemoteNotifications()
+   //     application.registerForRemoteNotifications()
         
         
         
